@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Etiquetas asd</title>
+    <title>Etiquetas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Etiquetas en HTML</h1>
-    </header>
-    H<sub>1</sub>ola, este es un texto con una etiqueta de subíndice.
-    <div>
-        <p>Este es un parrafo <strong>con negritas</strong>.</p>
-        <br />
-        <p>Eso de arriba ue un salto des línea</p>
-    </div>
-    <nav>
-        <a href="index.html">Ir al Inicio</a> | 
-        <a href="profile.html">Ir al Perfil</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="about.html">Sobre mí</a>
+                <a class="nav-link" href="profile.html">Perfil</a>
+                <a class="nav-link active" href="tags.html">Etiquetas</a>
+            </div>
+        </div>
     </nav>
-</body>
-</html>
+
+    <div class="container mt-5">
+        <header>
+            <h1>Etiquetas en HTML</h1>
