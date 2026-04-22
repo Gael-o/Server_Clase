@@ -1,10 +1,33 @@
-console.log("Hola mundo!")
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault(); 
 
-const objeto = {atributo:"name", atributo2:39}
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
 
-console.log(objeto.atributo)
-console.log(objeto.atributo2)
+    console.log("Intentando login para:", user);
 
-objeto.atributo2 = "hola"
+    try {
+        const response = await fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username: user, password: pass })
+        });
 
-console.log(objeto.atributo2);
+        const data = await response.json();
+
+        if (data.success) {
+            alert("¡Login exitoso! Bienvenido, ID del usuario: " + data.userId);
+            window.location.href = "juego.html?userId=" + data.userId;
+            // Aquí es donde mandaremos al usuario al juego después
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        console.error("Error al comunicarse con el backend:", error);
+        alert("No se pudo conectar con el servidor.");
+    }
+});
+

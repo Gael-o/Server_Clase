@@ -1,58 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TC2005B Web</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Login - Proyecto Integrador</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #1a1a1a; color: white; margin: 0; }
+        .login-box { background: #333; padding: 30px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        input { display: block; margin: 15px auto; padding: 12px; width: 220px; border-radius: 5px; border: none; }
+        button { padding: 10px 25px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    </style>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Mi Sitio</a>
-    <div class="navbar-nav">
-      <a class="nav-link" href="index.html">Inicio</a>
-      <a class="nav-link" href="about.html">Sobre mí</a>
-      <a class="nav-link" href="profile.html">Perfil</a>
-      <a class="nav-link" href="tags.html">Etiquetas</a>
+    <div class="login-box">
+        <h2>Bienvenido</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar al Juego</button>
+        </form>
     </div>
-        </div>
-                </nav><div class="container mt-5"> 
-    <button id="btnLogin">Dale CLick</button>
-    <h1 class="text-center">¡Mi servidor de Node está vivo!</h1>
-    
-    <div class="row justify-content-center">
-        </div>
-
-    <div class="container mt-5"> <div class="row justify-content-center">
-        <div class="col-md-4">
-            <form class="p-4 border rounded shadow bg-white"> <h2 class="text-center mb-4">Iniciar Sesión</h2>
-                
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Tu usuario"> 
-                    </div>
-
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Tu contraseña">
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">Enviar</button> 
-                </form>
-        </div>
-    </div>
-</div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,1 +1,5 @@
 https://github.com/Gael-o/Server_Clase
+
+Para que pueda probar el juego prof! :)
+Usuario: gael
+Contraseña: 1234
